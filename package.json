@@ -1,0 +1,17 @@
+{
+  "name": "AustralianBusinessNumber",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "phantomjs": "~1.9.1-0",
+    "grunt-karma": "~0.5",
+	"grunt-contrib-jshint": "~0.7",
+    "karma": "~0.9",
+    "karma-chrome-launcher": "0.0.2",
+    "karma-script-launcher": "0.0.1",
+    "karma-firefox-launcher": "0.0.2",
+    "karma-jasmine": "0.0.1",
+    "karma-requirejs": "0.0.1",
+    "karma-phantomjs-launcher": "0.0.2"
+  }
+}

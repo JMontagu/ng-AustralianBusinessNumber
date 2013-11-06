@@ -1,0 +1,23 @@
+{
+  "name": "angularjs-abn-directive",
+  "version": "0.1.0",
+  "description": "Australian Business Number (ABN) validation directive",
+  "main": ".src/australianBusinessNumber.js",
+  "authors": [
+    "Jade Montagu"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.x"
+  },
+  "devDependencies": {
+	"angular-mocks": "1.x"
+  }
+}
