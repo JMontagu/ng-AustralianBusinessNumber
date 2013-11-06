@@ -79,5 +79,11 @@ describe('directives', function() {
 			expect($scope.model.abn).toEqual(undefined);
 			expect(form.abn.$valid).toBe(false);
 		});
+		it('should fail with a valid ABN containing special chars', function() {
+			var exampleABN = '53 004 % 085 616!';
+			form.abn.$setViewValue(exampleABN);
+			expect($scope.model.abn).toEqual(undefined);
+			expect(form.abn.$valid).toBe(false);
+		});
 	});
 });
