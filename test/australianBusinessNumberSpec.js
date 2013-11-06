@@ -9,11 +9,11 @@ describe('directives', function() {
 	beforeEach(inject(function($compile, $rootScope) {
 		$scope = $rootScope.$new();
 		var element = angular.element(
-		  '<form name="form">' +
-			'<input ng-model="model.abn" name="abn" abn />' +
-		  '</form>'
+			'<form name="form">'+
+				'<input ng-model="model.abn" name="abn" abn />' +
+			'</form>'
 		);
-		$scope.model = { abn: null }
+		$scope.model = { abn: null };
 		$compile(element)($scope);
 		$scope.$digest();
 		form = $scope.form;

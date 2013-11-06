@@ -26,8 +26,8 @@ angular.module('australianBusinessNumber', [])
 						// 3. Sum the resulting 11 products
 						var weight = [10, 1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
 						var weightedSum = 0;
-                        for (var i = 0; i < abn.length; i++) {
-							var weightedDigit = abn[i] * weight[i];
+                        for (var j = 0; j < abn.length; j++) {
+							var weightedDigit = abn[j] * weight[j];
                             weightedSum += weightedDigit;
                         }
 
@@ -52,5 +52,5 @@ angular.module('australianBusinessNumber', [])
                     }
                 });
             }
-        }
+        };
     });
