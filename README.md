@@ -1,6 +1,6 @@
 Australian Business Number (ABN) directive [![Build Status](https://api.travis-ci.org/JMontagu/ng-AustralianBusinessNumber.png)](https://travis-ci.org/JMontagu/ng-AustralianBusinessNumber)
 ==========
-ABN validation directive. Uses the Australian Taxation Office (ATO) [ABN verification formula](http://www.ato.gov.au/Business/Australian-business-number/In-detail/Introduction/Format-of-the-ABN/).
+ABN validation directive for AngularJS. Uses the Australian Taxation Office (ATO) [ABN verification formula](http://www.ato.gov.au/Business/Australian-business-number/In-detail/Introduction/Format-of-the-ABN/).
 
 # Requirements
 - [AngularJS](http://angularjs.org/)
@@ -19,7 +19,8 @@ This project uses [Grunt](http://gruntjs.com/) to check for JavaScript syntax er
 `$ grunt`
 
 # Usage
-Add the australianBusinessNumber module as a dependency to your application module:
+1. Add [src/australianBusinessNumber.js](https://github.com/JMontagu/ng-AustralianBusinessNumber/blob/master/src/australianBusinessNumber.js) to your solution
+2. Add the australianBusinessNumber module as a dependency to your application module:
 
 ```javascript
 var myAppModule = angular.module('MyApp', ['australianBusinessNumber']);
@@ -45,3 +46,6 @@ To display a validation error:
 	<span ng-show="form.$error.abnInput">Invalid ABN</span>
 </form>
 ```
+
+# License
+This code is released under the MIT license. 
