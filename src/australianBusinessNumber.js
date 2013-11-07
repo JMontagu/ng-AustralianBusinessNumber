@@ -8,6 +8,8 @@ angular.module('australianBusinessNumber', [])
             link: function (scope, elm, attrs, ctrl) {
 
                 function isValidAbn(val) {
+					if(val === '') return true;
+					
                     var isValid = false;
                     val = val.replace(/\s/g, '');
 
@@ -40,17 +42,20 @@ angular.module('australianBusinessNumber', [])
                     return isValid;
                 }
 
-                ctrl.$parsers.unshift(function (viewValue) {
-                    console.log(viewValue);
-
-                    if (viewValue === '' || isValidAbn(viewValue)) {
+                ctrl.$parsers.unshift(function (value) {
+                    if (isValidAbn(value)) {
                         ctrl.$setValidity('abn', true);
-                        return viewValue;
+                        return value;
                     } else {
                         ctrl.$setValidity('abn', false);
                         return undefined;
                     }
                 });
+				
+				ctrl.$formatters.unshift(function(value) {
+					ctrl.$setValidity('abn', isValidAbn(value));
+					return value;
+				});
             }
         };
     });
