@@ -8,7 +8,9 @@ angular.module('australianBusinessNumber', [])
             link: function (scope, elm, attrs, ctrl) {
 
                 function isValidAbn(val) {
-					if(val === '') return true;
+					if(!val || val === '') {
+						return true;
+					}
 					
                     var isValid = false;
                     val = val.replace(/\s/g, '');
