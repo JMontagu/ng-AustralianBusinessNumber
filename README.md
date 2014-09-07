@@ -28,6 +28,7 @@ This project uses [Grunt](http://gruntjs.com/) to check for JavaScript syntax er
 ```javascript
 var myAppModule = angular.module('MyApp', ['australianBusinessNumber']);
 ```
+
 3. Add the directive 'abn' to your form elements like so:
 
 ```html
