@@ -9,8 +9,8 @@ View the demo at [jmontagu.github.io/ng-AustralianBusinessNumber/](http://jmonta
 - [AngularJS](http://angularjs.org/)
 
 ## Setup
-1. Install **Karma**, **Grunt** and **Bower**
-  `$ npm install -g karma grunt-cli bower`
+1. Install **Grunt** and **Bower**
+  `$ npm install -g grunt-cli bower`
 2. Install development dependencies
   `$ npm install`
 3. Install components
@@ -28,8 +28,7 @@ This project uses [Grunt](http://gruntjs.com/) to check for JavaScript syntax er
 ```javascript
 var myAppModule = angular.module('MyApp', ['australianBusinessNumber']);
 ```
-
-Apply this directive to your form elements:
+3. Add the directive 'abn' to your form elements like so:
 
 ```html
 <input type="text" ng-model="client.abn" abn />
