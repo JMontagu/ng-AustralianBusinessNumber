@@ -24,12 +24,11 @@ This project uses [Grunt](http://gruntjs.com/) to check for JavaScript syntax er
 # Usage
 1. Add [src/australianBusinessNumber.js](https://github.com/JMontagu/ng-AustralianBusinessNumber/blob/master/src/australianBusinessNumber.js) to your solution
 2. Add the australianBusinessNumber module as a dependency to your application module:
-
 ```javascript
 var myAppModule = angular.module('MyApp', ['australianBusinessNumber']);
 ```
 
-3. Add the directive 'abn' to your form elements like so:
+3. Add the attribute 'abn' to your form elements like so:
 
 ```html
 <input type="text" ng-model="client.abn" abn />
