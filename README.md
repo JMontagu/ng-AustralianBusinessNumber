@@ -5,39 +5,23 @@ ABN validation directive for AngularJS. Uses the Australian Taxation Office (ATO
 # Demo
 View the demo at [jmontagu.github.io/ng-AustralianBusinessNumber/](http://jmontagu.github.io/ng-AustralianBusinessNumber/)
 
-# Requirements
-- [AngularJS](http://angularjs.org/)
-
-## Setup
-1. Install **Grunt** and **Bower**
-  `$ npm install -g grunt-cli bower`
-2. Install development dependencies
-  `$ npm install`
-3. Install components
-  `$ bower install`
-
-## Testing
-This project uses [Grunt](http://gruntjs.com/) to check for JavaScript syntax errors and execute all unit tests. To run Grunt, simply execute:
-
-`$ grunt`
-
 # Usage
 1. Add [src/australianBusinessNumber.js](https://github.com/JMontagu/ng-AustralianBusinessNumber/blob/master/src/australianBusinessNumber.js) to your solution
 2. Add the australianBusinessNumber module as a dependency to your application module:
-```javascript
-var myAppModule = angular.module('MyApp', ['australianBusinessNumber']);
-```
 
+    ```javascript
+    var myAppModule = angular.module('MyApp', ['australianBusinessNumber']);
+    ```
 3. Add the attribute 'abn' to your form elements like so:
 
-```html
-<input type="text" ng-model="client.abn" abn />
-```
+    ```html
+    <input abn type="text" ng-model="client.abn" />
+    ```
 
 To make the element mandatory:
 
 ```html
-<input type="text" ng-model="client.abn" abn required />
+<input abn required type="text" ng-model="client.abn" />
 ```
 
 To display a validation error:
@@ -48,6 +32,23 @@ To display a validation error:
 	<span ng-show="form.$error.abnInput">Invalid ABN</span>
 </form>
 ```
+
+
+# Requirements
+- [AngularJS](http://angularjs.org/)
+
+## Project setup
+1. Install **Karma**, **Grunt**, **Bower**
+  `$ npm install -g karma grunt-cli bower`
+2. Install development dependencies
+  `$ npm install`
+3. Install components
+  `$ bower install`
+
+## Testing
+This project uses [Grunt](http://gruntjs.com/) to check for JavaScript syntax errors and execute all unit tests. To run Grunt, simply execute:
+
+`$ grunt`
 
 # License
 This code is released under the MIT license. 
