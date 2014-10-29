@@ -12,6 +12,9 @@ angular.module('australianBusinessNumber', [])
 				}
 				
 				var isValid = false;
+				
+				val = val.toString();
+				
 				val = val.replace(/\s/g, '');
 	
 				// 0. ABN must be 11 digits long
