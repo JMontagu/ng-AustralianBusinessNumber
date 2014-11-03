@@ -5,6 +5,9 @@ ABN validation directive for AngularJS. Uses the Australian Taxation Office (ATO
 # Demo
 View the demo at [jmontagu.github.io/ng-AustralianBusinessNumber/](http://jmontagu.github.io/ng-AustralianBusinessNumber/)
 
+# Download
+Download the [latest release](https://github.com/JMontagu/ng-AustralianBusinessNumber/releases/latest)
+
 # Usage
 1. Add [src/australianBusinessNumber.js](https://github.com/JMontagu/ng-AustralianBusinessNumber/blob/master/src/australianBusinessNumber.js) to your solution
 2. Add the australianBusinessNumber module as a dependency to your application module:
