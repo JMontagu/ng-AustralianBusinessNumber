@@ -2,7 +2,7 @@
   "name": "angularjs-abn-directive",
   "version": "1.0.0",
   "description": "Australian Business Number (ABN) validation directive",
-  "main": ".src/australianBusinessNumber.js",
+  "main": "./src/australianBusinessNumber.js",
   "authors": [
     "Jade Montagu"
   ],
