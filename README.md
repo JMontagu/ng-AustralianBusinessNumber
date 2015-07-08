@@ -1,6 +1,6 @@
 Australian Business Number (ABN) directive [![Build Status](https://api.travis-ci.org/JMontagu/ng-AustralianBusinessNumber.png)](https://travis-ci.org/JMontagu/ng-AustralianBusinessNumber)
 ==========
-ABN validation directive for AngularJS. Uses the Australian Taxation Office (ATO) [ABN verification formula](http://www.ato.gov.au/Business/Australian-business-number/In-detail/Introduction/Format-of-the-ABN/).
+ABN validation directive for AngularJS. Uses the Australian Taxation Office (ATO) [ABN verification formula](http://softwaredevelopers.ato.gov.au/ABNformat).
 
 # Demo
 View the demo at [jmontagu.github.io/ng-AustralianBusinessNumber/](http://jmontagu.github.io/ng-AustralianBusinessNumber/)
